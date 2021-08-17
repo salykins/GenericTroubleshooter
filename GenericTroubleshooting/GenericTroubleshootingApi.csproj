@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.13" />
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="MySql.Data" Version="8.0.26" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.12.1" />
+    <PackageReference Include="LibHoney" Version="0.9.1" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Dapper" />
+    <None Remove="DataAccess\" />
+    <None Remove="BusinessLogic\" />
+    <None Remove="MySql.Data" />
+    <None Remove="DataClasses\" />
+    <None Remove="Honeycomb.AspNetCore" />
+    <None Remove="Honeycomb" />
+    <None Remove="Honeycomb.Serilog.Sink" />
+    <None Remove="Honeycomb.OpenTelemetry" />
+    <None Remove="Config\" />
+    <None Remove="HttpFunctions\" />
+    <None Remove="HttpFunctions\v1\" />
+    <None Remove="HttpFunctions\Classes\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+    <None Remove="System.Web.Http.Common" />
+    <None Remove="System.Net.Http" />
+    <None Remove="Authorization\" />
+    <None Remove="Microsoft.IdentityModel" />
+    <None Remove="Microsoft.IdentityModel.Protocols.OpenIdConnect" />
+    <None Remove="Microsoft.Extensions.Primitives" />
+    <None Remove="LibHoney" />
+    <None Remove="Logging\" />
+    <None Remove="System.Runtime.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="DataClasses\" />
+    <Folder Include="Config\" />
+    <Folder Include="HttpFunctions\" />
+    <Folder Include="HttpFunctions\v1\" />
+    <Folder Include="HttpFunctions\Classes\" />
+    <Folder Include="Authorization\" />
+    <Folder Include="Logging\" />
+  </ItemGroup>
+</Project>
