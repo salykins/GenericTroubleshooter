@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.810.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericTroubleshootingApi", "GenericTroubleshooting\GenericTroubleshootingApi.csproj", "{6A359E63-DB5D-4BB2-A58C-87F0D612FCF6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4C429DD-C1DB-4FAB-93BE-7E0BB1157880}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
