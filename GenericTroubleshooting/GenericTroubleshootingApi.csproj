@@ -52,8 +52,6 @@
     <Folder Include="BusinessLogic\" />
     <Folder Include="DataClasses\" />
     <Folder Include="Config\" />
-    <Folder Include="HttpFunctions\" />
-    <Folder Include="HttpFunctions\v1\" />
     <Folder Include="HttpFunctions\Classes\" />
     <Folder Include="Authorization\" />
     <Folder Include="Logging\" />

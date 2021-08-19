@@ -18,9 +18,9 @@ using System.Diagnostics;
 
 namespace GenericTroubleshooting.HttpFunctions.v1
 {
-    public static class SATroubleshooting
+    public static class Troubleshooting
     {
-        const string functionName = "SATroubleshooting";
+        const string functionName = "Troubleshooting";
         [FunctionName(functionName)]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
